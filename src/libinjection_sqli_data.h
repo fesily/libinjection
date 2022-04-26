@@ -33,7 +33,6 @@ static size_t parse_bstring(sfilter * sf);
 static size_t parse_estring(sfilter * sf);
 static size_t parse_bword(sfilter * sf);
 
-
 typedef size_t (*pt2Function)(sfilter *sf);
 static const pt2Function char_parse_map[] = {
    &parse_white, /* 0 */
@@ -293,7 +292,6 @@ static const pt2Function char_parse_map[] = {
    &parse_word, /* 254 */
    &parse_word, /* 255 */
 };
-
 static const keyword_t sql_keywords[] = {
     {"!!", 'o'},
     {"!<", 'o'},
